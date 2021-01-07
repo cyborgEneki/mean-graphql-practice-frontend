@@ -26,16 +26,6 @@ const CREATE_QUOTE = gql`
   }
 `;
 
-const DELETE_QUOTE = gql`
-  mutation deleteQuote($id: ID!) {
-    deleteQuote(id: $id) {
-      _id
-      quote
-      author
-    }
-  }
-`;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
