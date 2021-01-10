@@ -16,15 +16,15 @@ const GET_QUOTES = gql`
   }
 `;
 
-// const CREATE_QUOTE = gql`
-//   mutation createQuote($quote: String!, $author: String!) {
-//     createQuote(quoteInput: { quote: $quote, author: $author}) {
-//       _id
-//       quote
-//       author
-//     }
-//   }
-// `;
+const CREATE_QUOTE = gql`
+  mutation createQuote($quote: String!, $author: String!) {
+    createQuote(quoteInput: { quote: $quote, author: $author}) {
+      _id
+      quote
+      author
+    }
+  }
+`;
 
 const DELETE_QUOTE = gql`
   mutation deleteQuote($id: ID!) {
