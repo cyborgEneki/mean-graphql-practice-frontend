@@ -4,17 +4,6 @@ import gql from 'graphql-tag';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-const GET_QUOTES = gql`
-  {
-    quotes {
-      quotes {
-        _id
-        quote
-        author
-      }
-    }
-  }
-`;
 
 const CREATE_QUOTE = gql`
   mutation createQuote($quote: String!, $author: String!) {
